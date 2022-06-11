@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/*titulo*/
+body .head {
+  grid-area: titulo;
+  color: linear-gradient(to left, #ba5370, #f4e2d8);
+  font-size: 25px;
+  justify-items: start;
+  animation-name: un_efecto; }
+  body .head h1 {
+    text-align: center;
+    margin-top: 25px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
+
+body .logo {
+  grid-area: logo;
+  margin-bottom: 10px; }
+  body .logo img {
+    height: 80%; }
+
+/*menu*/
+body .list {
+  grid-area: lista;
+  border: 1px black solid;
+  background-color: linear-gradient(to left, #ba5370, #f4e2d8);
+  border-radius: 50px; }
+  body .list .listUl {
+    display: flex;
+    justify-content: space-evenly; }
+    body .list .listUl li {
+      border: 1px black solid;
+      padding: 3px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 20px; }
+
+/*footer*/
+body .footer {
+  grid-area: pie;
+  font-size: 1rem;
+  color: black;
+  text-align: end;
+  font-weight: bold; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+/*PAGINA 1 INDEX*/
+.contenedorUno {
+  background-image: linear-gradient(to left, #ba5370, #f4e2d8);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo titulo" "lista lista" "imgprincipal imgprincipal" "texto texto" "pie pie";
+  gap: 3px; }
+  .contenedorUno .imgPrincipal {
+    grid-area: imgprincipal; }
+    .contenedorUno .imgPrincipal img {
+      width: 50%; }
+  .contenedorUno .principal {
+    grid-area: texto;
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 8px double #000000; }
+    .contenedorUno .principal h2 {
+      font-size: 2rem;
+      color: #a45656;
+      margin-top: 25px;
+      margin-bottom: 0;
+      text-decoration: underline;
+      font-weight: bold; }
+
+/*PAGINA 2 TRATAMIENTOS*/
+.contenedorDos {
+  background-image: linear-gradient(to left, #ba5370, #f4e2d8);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo titulo" "lista lista" "tratamientos tratamientos" "videos videos" "pie pie";
+  gap: 3px; }
+  .contenedorDos .principalDos {
+    grid-area: tratamientos;
+    display: flex;
+    font-size: 2rem;
+    margin: 5px; }
+  .contenedorDos .tratamientos {
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 8px double #000000;
+    margin-right: 5px; }
+    .contenedorDos .tratamientos legend {
+      font-size: 2rem;
+      margin-top: 25px;
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #F09090; }
+  .contenedorDos .imagenesVideo {
+    grid-area: videos;
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 8px double #000000; }
+    .contenedorDos .imagenesVideo .contenido {
+      display: inline-flex;
+      overflow: auto;
+      width: 70%;
+      height: 380px; }
+      .contenedorDos .imagenesVideo .contenido .opacidad {
+        filter: grayscale(85%); }
+      .contenedorDos .imagenesVideo .contenido .opacidad:hover {
+        filter: none; }
+
+/*PAGINA 3 QUIENES SOMOS*/
+.contenedorTres {
+  background-image: linear-gradient(to left, #ba5370, #f4e2d8);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo titulo" "lista lista" "pr pr" "obj obj" "pie pie"; }
+  .contenedorTres .objetivos {
+    grid-area: obj;
+    border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 8px double #000000;
+    width: auto;
+    background-color: linear-gradient(to top, cadetblue, white); }
+  .contenedorTres .presentacion {
+    grid-area: pr;
+    display: flex;
+    justify-content: space-around; }
+    .contenedorTres .presentacion .roxana,
+    .contenedorTres .presentacion .tamara {
+      width: auto;
+      margin-right: 5px; }
+      .contenedorTres .presentacion .roxana .textoPr,
+      .contenedorTres .presentacion .tamara .textoPr {
+        height: 300px;
+        overflow: auto;
+        border: 2px black solid;
+        background-color: linear-gradient(to left, #ba5370, #f4e2d8);
+        text-align: center; }
+      .contenedorTres .presentacion .roxana .img1,
+      .contenedorTres .presentacion .tamara .img1 {
+        width: 250px;
+        height: 250px;
+        border-radius: 70px; }
+
+/*PAGINA 4 INDICACIONES*/
+.contenedorCuatro {
+  background-image: linear-gradient(to left, #ba5370, #f4e2d8);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo titulo" "lista lista" "indica indica" "producto producto" "cata cata" "pie pie"; }
+  .contenedorCuatro .indicaciones {
+    grid-area: indica; }
+    .contenedorCuatro .indicaciones .cuatroTexto {
+      text-align: center;
+      border-radius: 30px 30px 30px 30px;
+      -moz-border-radius: 30px 30px 30px 30px;
+      -webkit-border-radius: 30px 30px 30px 30px;
+      border: 8px double #000000;
+      align-items: center; }
+  .contenedorCuatro .productos {
+    grid-area: producto; }
+    .contenedorCuatro .productos .seleccionProductos {
+      border: 2px black solid; }
+    .contenedorCuatro .productos .boton {
+      width: auto;
+      height: 30px;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    .contenedorCuatro .productos h3 {
+      background-color: cadetblue;
+      border: 2px black solid; }
+  .contenedorCuatro .catalogo {
+    grid-area: cata; }
+    .contenedorCuatro .catalogo .pr {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      overflow: scroll;
+      margin: 0; }
+      .contenedorCuatro .catalogo .pr .imgPr {
+        width: 250px;
+        height: 250px; }
+
+/*PAGINA 5 CONTACTO*/
+.contenedorCinco {
+  background-image: linear-gradient(to left, #ba5370, #f4e2d8);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "logo titulo" "lista lista" "formu ubica" "formu ubica" "redes redes" "pie pie";
+  gap: 3px; }
+  .contenedorCinco .formulario {
+    grid-area: formu;
+    border: 2px black solid;
+    text-align: center; }
+    .contenedorCinco .formulario .contenido {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border: 2px black solid; }
+      .contenedorCinco .formulario .contenido #nombre,
+      .contenedorCinco .formulario .contenido #numero,
+      .contenedorCinco .formulario .contenido #email,
+      .contenedorCinco .formulario .contenido #tratamiento {
+        height: 25px;
+        border: 2px black solid; }
+  .contenedorCinco .ubicacion {
+    grid-area: ubica;
+    border: 2px black solid; }
+  .contenedorCinco .redes {
+    grid-area: redes;
+    border: 2px black solid;
+    background-color: white; }
+
+/*MEDIAS*/
+@media screen and (max-width: 709px) {
+  .listUl {
+    display: flex;
+    flex-wrap: wrap; }
+  .principalDos {
+    width: 90%;
+    display: block;
+    flex-direction: column; } }
+
+/*tablet*/
+@media screen and (min-width: 500px) and (max-width: 780px) {
+  /* tratamientos enderezar*/
+  .principalDos {
+    flex-wrap: wrap; }
+  /*contendor 5*/
+  .contenedorCinco {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo titulo" "lista lista" "formu formu" "ubica ubica" "redes redes" "pie pie"; } }
+
+/*celular*/
+@media screen and (max-width: 400px) {
+  .head {
+    display: none; }
+  .listUl {
+    display: flex;
+    flex-wrap: wrap; }
+  .list {
+    width: 90%;
+    margin-left: 15px; }
+  .logo {
+    text-align: center;
+    width: 380px; }
+  /*pagina 1*/
+  .contenedorUno {
+    display: grid;
+    grid-template-areas: "logo logo" "lista lista " "texto texto " "pie pie"; }
+    .contenedorUno .imgPrincipal {
+      display: none; }
+      .contenedorUno .imgPrincipal .principal p {
+        font-size: 1.1rem; }
+  .presentacion {
+    display: inline; }
+  /*pagina2*/
+  .contenedorDos {
+    display: grid;
+    grid-area: "logo logo" "lista lista" "tratamiento tratamiento" "video video" "pie pie"; }
+    .contenedorDos .principalDos {
+      display: block;
+      flex-direction: column; }
+    .contenedorDos .tratamientos {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      width: 350px;
+      height: 300px;
+      overflow: auto; }
+    .contenedorDos .imagenesVideo {
+      margin: 15px; }
+  /*pagina3*/
+  .contenedorTres {
+    display: grid;
+    grid-area: "logo logo" "lista lista" "pr pr" "obj obj" "pie pie"; }
+    .contenedorTres .presentacion {
+      display: block;
+      flex-direction: column;
+      width: 90%;
+      margin-left: 15px;
+      margin-top: 5px; }
+  /*pagina 4*/
+  .contenedorCuatro {
+    display: grid;
+    grid-template-areas: "logo logo" "lista lista" "pr pr" "idica indica" "pr pr" "pie pie"; }
+    .contenedorCuatro .cuatroTexto {
+      border: none; }
+    .contenedorCuatro .cuadroUno {
+      margin: 10px;
+      width: 350px;
+      height: 350px;
+      overflow: auto; }
+    .contenedorCuatro .catalogo {
+      display: none; }
+  /*pagina5*/
+  .contenedorCinco {
+    display: grid;
+    grid-template-areas: "logo logo" "lista lista" "formu formu" "redes redes" "pie pie"; }
+  .ubicacion {
+    display: none; } }
+
+* {
+  border: 0;
+  padding: 0; }

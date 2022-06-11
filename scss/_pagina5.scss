@@ -1,0 +1,62 @@
+@import "maps","mixin";
+
+
+/*PAGINA 5 CONTACTO*/
+
+.contenedorCinco {
+    @include body();
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "formu ubica"
+        "formu ubica"
+        "redes redes"
+        "pie pie";
+    gap: 3px;
+
+    .formulario {
+        grid-area: formu;
+        border: map-get($map, $key: borde);
+        text-align: center;
+
+        .contenido {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: map-get($map, $key: borde);
+
+            #nombre,
+            #numero,
+            #email,
+            #tratamiento {
+                height: 25px;
+                border: map-get($map, $key: borde);
+            }
+        }
+    }
+
+    .ubicacion {
+        grid-area: ubica;
+        border: map-get($map, $key: borde);
+    }
+
+    .redes {
+        grid-area: redes;
+        border: map-get($map, $key: borde);
+        background-color: white;
+    }
+}
+
+/*MEDIAS*/
+@media screen and (max-width: 709px){
+
+    .listUl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .principalDos {
+        width: 90%;
+        display: block;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,45 @@
+@import "maps","mixin";
+
+/*PAGINA 3 QUIENES SOMOS*/
+.contenedorTres {
+    @include body();
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "pr pr"
+        "obj obj"
+        "pie pie";
+
+    .objetivos {
+        grid-area: obj;
+        @include bordesDos ();
+        width: auto;
+        background-color: map-get($map, $key:fondo );
+    }
+
+    .presentacion {
+        grid-area: pr;
+        display: flex;
+        justify-content: space-around;
+
+        .roxana,
+        .tamara {
+            width: auto;
+            margin-right: 5px;
+
+            .textoPr {
+                height: 300px;
+                overflow: auto;
+                border: map-get($map , $key: borde);
+                background-color: map-get($map, $key:fondo2);
+                text-align: center;
+            }
+
+            .img1 {
+                width: 250px;
+                height: 250px;
+                border-radius: 70px;
+            }
+        }
+    }
+}

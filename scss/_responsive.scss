@@ -1,0 +1,154 @@
+@import "maps","mixin";
+/*tablet*/
+@media screen and (min-width:500px) and(max-width:780px )  {
+    /* tratamientos enderezar*/
+    .principalDos{
+        flex-wrap: wrap;
+        
+    }
+
+    /*contendor 5*/
+    .contenedorCinco {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "logo titulo"
+            "lista lista"
+            "formu formu"
+            "ubica ubica"
+            "redes redes"
+            "pie pie";
+    }
+
+}
+/*celular*/
+@media screen and (max-width:400px) {
+    .head {
+        display: none;
+    }
+    .listUl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .list {
+        width: 90%;
+        margin-left: 15px;
+
+    }
+    .logo {
+        text-align: center;
+        width: 380px;
+    }
+
+/*pagina 1*/
+    .contenedorUno {
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "lista lista "
+        "texto texto "
+        "pie pie";
+        .imgPrincipal {
+            display: none;
+        .principal p {
+            font-size: 1.1rem;
+        }
+        }
+        
+    }
+    
+    .presentacion {
+        display: inline;
+    }
+/*pagina2*/
+    .contenedorDos {
+        display: grid;
+        grid-area:
+        "logo logo"
+        "lista lista"
+        "tratamiento tratamiento"
+        "video video"
+        "pie pie";
+        .principalDos {
+            display: block;
+            flex-direction: column;
+        }
+        .tratamientos {
+            margin-left: 15px;
+            margin-bottom: 10px;
+            width: 350px;
+            height: 300px;
+            overflow: auto;
+        }
+        .imagenesVideo{
+            margin: 15px;
+        }
+    }
+   
+/*pagina3*/
+    .contenedorTres {
+        display: grid;
+        grid-area:
+            "logo logo"
+            "lista lista"
+            "pr pr"
+            "obj obj"
+            "pie pie";
+            .presentacion {
+                display: block;
+                flex-direction: column;
+                width: 90%;
+                margin-left: 15px;
+                margin-top: 5px;
+            }
+    }
+
+   
+    
+    /*pagina 4*/
+    .contenedorCuatro {
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "lista lista"
+        "pr pr"
+        "idica indica"
+        "pr pr"
+        "pie pie";
+        .cuatroTexto{
+            border:none;
+        }
+        .cuadroUno{
+            margin: 10px;
+            width: 350px;
+            height: 350px;
+            overflow: auto;
+        }
+        .catalogo{
+            display: none;
+    
+        }
+    }
+   
+
+/*pagina5*/
+    .contenedorCinco {
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "lista lista"
+            "formu formu"
+            "redes redes"
+            "pie pie";
+
+    }
+
+    .ubicacion {
+        display: none;
+    }
+
+
+}

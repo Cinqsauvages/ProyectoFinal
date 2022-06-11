@@ -1,0 +1,29 @@
+/*titulo*/
+@import "maps";
+
+body {
+    .head {
+        grid-area: titulo;
+        color: map-get($map, $key: fondo2);
+        font-size: 25px;
+        justify-items: start;
+        animation-name: un_efecto;
+
+        h1 {
+            text-align: center;
+            margin-top: 25px;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+}
+
+.logo {
+    grid-area: logo;
+
+    img {
+        height: 80%;
+    }
+
+    margin-bottom: 10px;
+
+}
+}

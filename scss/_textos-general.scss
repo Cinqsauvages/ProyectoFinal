@@ -1,0 +1,7 @@
+@import "maps";
+
+p{
+    color: map-get($map , $key: color3);
+    font-size: 1.5rem;
+    font-weight: bold;
+}

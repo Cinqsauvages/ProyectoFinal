@@ -1,0 +1,37 @@
+@import "maps","mixin";
+/*PAGINA 1 INDEX*/
+.contenedorUno {
+    @include body();
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "imgprincipal imgprincipal"
+        "texto texto"
+        "pie pie";
+    gap: 3px;
+
+    .imgPrincipal {
+        grid-area: imgprincipal;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .principal {
+        grid-area: texto;
+        @include bordesDos ();
+
+        h2 {
+            font-size: 2rem;
+            color: map-get($map, $key: colorDos);
+            margin-top: 25px;
+            margin-bottom: 0;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+    }
+
+
+}

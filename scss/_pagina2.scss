@@ -1,0 +1,53 @@
+@import "maps", "mixin";
+
+/*PAGINA 2 TRATAMIENTOS*/
+.contenedorDos {
+    @include body();
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "tratamientos tratamientos"
+        "videos videos"
+        "pie pie";
+    gap: 3px;
+
+    .principalDos {
+        grid-area: tratamientos;
+        display: flex;
+        font-size: 2rem;
+        margin: 5px;
+    }
+
+    .tratamientos {
+        @include bordesDos ();
+        margin-right: 5px;
+
+        legend {
+            font-size: 2rem;
+            margin-top: 25px;
+            margin-bottom: 0;
+            font-weight: bold;
+            color: map-get($map , $key: color);
+        }
+    }
+
+    .imagenesVideo {
+        grid-area: videos;
+        @include bordesDos ();
+
+        .contenido {
+            display: inline-flex;
+            overflow: auto;
+            width: 70%;
+            height: 380px;
+
+            .opacidad {
+                filter: grayscale(85%);
+            }
+
+            .opacidad:hover {
+                filter: none;
+            }
+        }
+    }
+}

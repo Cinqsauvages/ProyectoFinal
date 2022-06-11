@@ -1,0 +1,60 @@
+@import "maps","mixin";
+/*PAGINA 4 INDICACIONES*/
+
+.contenedorCuatro {
+    @include body();
+    grid-template-areas:
+        "logo titulo"
+        "lista lista"
+        "indica indica"
+        "producto producto"
+        "cata cata"
+        "pie pie";
+
+    .indicaciones {
+        grid-area: indica;
+
+        .cuatroTexto {
+            text-align: center;
+            @include bordesDos ();
+            align-items: center;
+        }
+    }
+
+    .productos {
+        grid-area: producto;
+
+        .seleccionProductos {
+            border: map-get($map, $key: borde);
+        }
+
+        .boton {
+            width: auto;
+            height: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            background-color: cadetblue;
+            border: map-get($map, $key: borde);
+        }
+    }
+
+    .catalogo {
+        grid-area: cata;
+
+        .pr {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            overflow: scroll;
+            margin: 0;
+
+            .imgPr {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
