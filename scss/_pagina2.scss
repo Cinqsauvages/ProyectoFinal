@@ -26,20 +26,22 @@
             margin-top: 25px;
             margin-bottom: 0;
             font-weight: bold;
-            color: map-get($map , $key: color);
+            color: map-get($map , $key: colorDos);
+            text-shadow: map-get($map, $key: color) 1px 2px;
         }
     }
+}
 
-    .imagenesVideo {
-        grid-area: videos;
-        display: flex;
-        justify-self: center;
-        width: 50%;
-        height: 50%;
-        .fotitos{
-           max-width: 90%;
+.imagenesVideo {
+    grid-area: videos;
+    display: flex;
+    justify-self: center;
+    width: 50%;
+    height: 50%;
 
-        }
+    .fotitos {
+        max-width: 90%;
 
     }
+
 }

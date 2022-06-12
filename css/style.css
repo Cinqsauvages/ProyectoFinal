@@ -65,7 +65,10 @@ a {
 p {
   color: black;
   font-size: 1.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: start;
+  text-indent: 1rem;
+  margin-left: 10px; }
 
 /*PAGINA 1 INDEX*/
 .contenedorUno {
@@ -121,15 +124,17 @@ p {
       margin-top: 25px;
       margin-bottom: 0;
       font-weight: bold;
-      color: #F09090; }
-  .contenedorDos .imagenesVideo {
-    grid-area: videos;
-    display: flex;
-    justify-self: center;
-    width: 50%;
-    height: 50%; }
-    .contenedorDos .imagenesVideo .fotitos {
-      max-width: 90%; }
+      color: #a45656;
+      text-shadow: #F09090 1px 2px; }
+
+.imagenesVideo {
+  grid-area: videos;
+  display: flex;
+  justify-self: center;
+  width: 50%;
+  height: 50%; }
+  .imagenesVideo .fotitos {
+    max-width: 90%; }
 
 /*PAGINA 3 QUIENES SOMOS*/
 .contenedorTres {
@@ -263,6 +268,8 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 10px; }
+  p {
+    font-size: 1.3rem; }
   /*pagina 1*/
   .contenedorUno {
     display: grid;

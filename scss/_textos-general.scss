@@ -4,4 +4,7 @@ p{
     color: map-get($map , $key: color3);
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: start;
+    text-indent: 1rem;
+    margin-left: 10px;
 }
