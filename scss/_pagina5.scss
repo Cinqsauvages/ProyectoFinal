@@ -6,8 +6,7 @@
 .contenedorCinco {
     @include body();
     grid-template-areas:
-        "logo titulo"
-        "lista lista"
+        "cabeza cabeza"
         "formu ubica"
         "formu ubica"
         "redes redes"

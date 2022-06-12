@@ -4,8 +4,7 @@
 .contenedorDos {
     @include body();
     grid-template-areas:
-        "logo titulo"
-        "lista lista"
+        "cabeza cabeza"
         "tratamientos tratamientos"
         "videos videos"
         "pie pie";

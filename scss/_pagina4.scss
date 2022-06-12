@@ -4,8 +4,7 @@
 .contenedorCuatro {
     @include body();
     grid-template-areas:
-        "logo titulo"
-        "lista lista"
+        "cabeza cabeza"
         "indica indica"
         "producto producto"
         "cata cata"

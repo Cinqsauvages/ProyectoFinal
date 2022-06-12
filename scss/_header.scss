@@ -13,6 +13,8 @@ body {
         border: 2px ridge black;
         border-radius: 25px;
 
+
+        /*foto nav*/
         .foto {
             justify-items: start;
             padding-right: 20%;
@@ -24,7 +26,7 @@ body {
                 max-height: 80px;
             }
         }
-
+        /*diseño nav*/
         .nave {
             min-width: 50%;
             min-height: 100%;
@@ -46,15 +48,14 @@ body {
                     /*efecto agrandar*/
                     a {
                         color: black;
-                        border: 2px white inset;
+                        border: 2px pink inset;
                         border-radius: 20px;
                         font-weight: bold;
                     }
                 }
-
                 .botonNave:hover {
                     a{
-                        color:white;
+                        color:gray;
                         border: 2px pink outset;
                     }
                 }

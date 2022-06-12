@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /*titulo*/
 body .head {
@@ -9,7 +10,9 @@ body .head {
   max-height: 80%;
   min-width: 100%;
   border: 2px ridge black;
-  border-radius: 25px; }
+  border-radius: 25px;
+  /*foto nav*/
+  /*diseño nav*/ }
   body .head .foto {
     justify-items: start;
     padding-right: 20%;
@@ -37,11 +40,11 @@ body .head {
         /*efecto agrandar*/ }
         body .head .nave .ul .botonNave a {
           color: black;
-          border: 2px white inset;
+          border: 2px pink inset;
           border-radius: 20px;
           font-weight: bold; }
       body .head .nave .ul .botonNave:hover a {
-        color: white;
+        color: gray;
         border: 2px pink outset; }
 
 /*footer*/
@@ -97,7 +100,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo titulo" "lista lista" "tratamientos tratamientos" "videos videos" "pie pie";
+  grid-template-areas: "cabeza cabeza" "tratamientos tratamientos" "videos videos" "pie pie";
   gap: 3px; }
   .contenedorDos .principalDos {
     grid-area: tratamientos;
@@ -140,7 +143,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo titulo" "lista lista" "pr pr" "obj obj" "pie pie"; }
+  grid-template-areas: "cabeza cabeza" "pr pr" "obj obj" "pie pie"; }
   .contenedorTres .objetivos {
     grid-area: obj;
     border-radius: 30px 30px 30px 30px;
@@ -178,7 +181,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo titulo" "lista lista" "indica indica" "producto producto" "cata cata" "pie pie"; }
+  grid-template-areas: "cabeza cabeza" "indica indica" "producto producto" "cata cata" "pie pie"; }
   .contenedorCuatro .indicaciones {
     grid-area: indica; }
     .contenedorCuatro .indicaciones .cuatroTexto {
@@ -220,7 +223,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo titulo" "lista lista" "formu ubica" "formu ubica" "redes redes" "pie pie";
+  grid-template-areas: "cabeza cabeza" "formu ubica" "formu ubica" "redes redes" "pie pie";
   gap: 3px; }
   .contenedorCinco .formulario {
     grid-area: formu;

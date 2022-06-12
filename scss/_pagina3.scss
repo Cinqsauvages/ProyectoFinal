@@ -4,8 +4,7 @@
 .contenedorTres {
     @include body();
     grid-template-areas:
-        "logo titulo"
-        "lista lista"
+        "cabeza cabeza"
         "pr pr"
         "obj obj"
         "pie pie";
