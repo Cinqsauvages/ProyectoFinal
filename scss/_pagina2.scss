@@ -32,21 +32,14 @@
 
     .imagenesVideo {
         grid-area: videos;
-        @include bordesDos ();
+        display: flex;
+        justify-self: center;
+        width: 50%;
+        height: 50%;
+        .fotitos{
+           max-width: 90%;
 
-        .contenido {
-            display: inline-flex;
-            overflow: auto;
-            width: 70%;
-            height: 380px;
-
-            .opacidad {
-                filter: grayscale(85%);
-            }
-
-            .opacidad:hover {
-                filter: none;
-            }
         }
+
     }
 }

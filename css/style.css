@@ -124,19 +124,12 @@ p {
       color: #F09090; }
   .contenedorDos .imagenesVideo {
     grid-area: videos;
-    border-radius: 30px 30px 30px 30px;
-    -moz-border-radius: 30px 30px 30px 30px;
-    -webkit-border-radius: 30px 30px 30px 30px;
-    border: 8px double #000000; }
-    .contenedorDos .imagenesVideo .contenido {
-      display: inline-flex;
-      overflow: auto;
-      width: 70%;
-      height: 380px; }
-      .contenedorDos .imagenesVideo .contenido .opacidad {
-        filter: grayscale(85%); }
-      .contenedorDos .imagenesVideo .contenido .opacidad:hover {
-        filter: none; }
+    display: flex;
+    justify-self: center;
+    width: 50%;
+    height: 50%; }
+    .contenedorDos .imagenesVideo .fotitos {
+      max-width: 90%; }
 
 /*PAGINA 3 QUIENES SOMOS*/
 .contenedorTres {
