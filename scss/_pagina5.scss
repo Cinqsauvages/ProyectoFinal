@@ -46,16 +46,3 @@
     }
 }
 
-/*MEDIAS*/
-@media screen and (max-width: 709px){
-
-    .listUl {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .principalDos {
-        width: 90%;
-        display: block;
-        flex-direction: column;
-    }
-}

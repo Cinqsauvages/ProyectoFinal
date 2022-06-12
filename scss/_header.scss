@@ -5,19 +5,20 @@ body {
     .head {
         padding: 8px;
         grid-area: cabeza;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         min-height: 50%;
         max-height: 80%;
         min-width: 100%;
-        border: 2px ridge black;
         border-radius: 25px;
 
 
         /*foto nav*/
         .foto {
-            justify-items: start;
-            padding-right: 20%;
+            display: flex;
+            flex-direction: start;
+            padding-right: 10%;
+            margin: 5px;
             min-width: 50%;
             min-height: 70%;
 
@@ -25,43 +26,53 @@ body {
                 max-width: 150px;
                 max-height: 80px;
             }
-        }
-        /*diseño nav*/
-        .nave {
-            min-width: 50%;
-            min-height: 100%;
-            padding-right: 10%;
 
-            .ul {
-                padding: 0;
-                margin-top: 25px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-                .botonNave {
-                    text-decoration: none;
-                    list-style: none;
-                    font-size: 20px;
-                    background-color: pink;
-                    border-radius: 20px;
-                    /*efecto agrandar*/
-                    a {
-                        color: black;
-                        border: 2px pink inset;
-                        border-radius: 20px;
-                        font-weight: bold;
-                    }
-                }
-                .botonNave:hover {
-                    a{
-                        color:gray;
-                        border: 2px pink outset;
-                    }
-                }
-
+            .h11 {
+                font-weight: bold;
+                font-style: oblique;
+                text-shadow: palevioletred 3px 5px;
+            
             }
-        }
 
+
+        }
     }
+
+    /*diseño nav*/
+    .nave {
+        min-width: 50%;
+        min-height: 100%;
+        padding-right: 10%;
+
+        .pul {
+            padding: 0;
+            margin-top: 25px;
+
+
+            .botonNave {
+                text-decoration: none;
+                list-style: none;
+                font-size: 20px;
+                background-color: pink;
+                border-radius: 20px;
+
+                /*efecto agrandar*/
+                a {
+                    color: black;
+                    border: 2px pink inset;
+                    border-radius: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .botonNave:hover {
+                a {
+                    color: gray;
+                    border: 2px pink outset;
+                }
+            }
+
+        }
+    }
+
 }
