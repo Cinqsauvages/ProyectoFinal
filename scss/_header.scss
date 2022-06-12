@@ -3,27 +3,52 @@
 
 body {
     .head {
-        grid-area: titulo;
-        color: map-get($map, $key: fondo2);
-        font-size: 25px;
-        justify-items: start;
-        animation-name: un_efecto;
+        padding: 5px;
+        grid-area: cabeza;
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+        min-width: 100%;
+        border: 2px solid black;
+        border-radius: 25px;
 
-        h1 {
-            text-align: center;
-            margin-top: 25px;
-            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        .foto {
+            justify-items: start;
+            padding-right: 25%;
+            min-width: 50%;
+            min-height: 100%;
+            .ban {
+                max-width: 250px;
+                max-height: 250px;
+            }
         }
-}
 
-.logo {
-    grid-area: logo;
+        .nave{
+            min-width: 50%;
+            min-height: 100%;
+            
+            .ul {
+                padding: 0;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+                .botonNave {
+                    text-decoration: none;
+                    list-style: none;
+                    font-size: 20px;
+                    background-color:pink;
+                    border-radius: 20px;
+                    a{
+                        color: black;
+                        border: map-get($map, $key:borde );
+                        border-radius: 20px;
+                        font-weight: bold;
+                    }
+                }
 
-    img {
-        height: 80%;
+            }
+
+        }
     }
-
-    margin-bottom: 10px;
-
-}
 }

@@ -1,40 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /*titulo*/
 body .head {
-  grid-area: titulo;
-  color: linear-gradient(to left, #ba5370, #f4e2d8);
-  font-size: 25px;
-  justify-items: start;
-  animation-name: un_efecto; }
-  body .head h1 {
-    text-align: center;
-    margin-top: 25px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
-
-body .logo {
-  grid-area: logo;
-  margin-bottom: 10px; }
-  body .logo img {
-    height: 80%; }
-
-/*menu*/
-body .list {
-  grid-area: lista;
-  border: 1px black solid;
-  background-color: linear-gradient(to left, #ba5370, #f4e2d8);
-  border-radius: 50px; }
-  body .list .listUl {
-    display: flex;
-    justify-content: space-evenly; }
-    body .list .listUl li {
-      border: 1px black solid;
-      padding: 3px;
-      margin: 10px;
+  padding: 5px;
+  grid-area: cabeza;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+  border: 2px solid black;
+  border-radius: 25px; }
+  body .head .foto {
+    justify-items: start;
+    padding-right: 25%;
+    min-width: 50%;
+    min-height: 100%; }
+    body .head .foto .ban {
+      max-width: 250px;
+      max-height: 250px; }
+  body .head .nave {
+    min-width: 50%;
+    min-height: 100%; }
+    body .head .nave .ul {
+      padding: 0;
+      margin-top: 25px;
       display: flex;
       flex-direction: row;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 20px; }
+      justify-content: space-around; }
+      body .head .nave .ul .botonNave {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        background-color: pink;
+        border-radius: 20px; }
+        body .head .nave .ul .botonNave a {
+          color: black;
+          border: 2px black solid;
+          border-radius: 20px;
+          font-weight: bold; }
 
 /*footer*/
 body .footer {
@@ -61,7 +63,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "logo titulo" "lista lista" "imgprincipal imgprincipal" "texto texto" "pie pie";
+  grid-template-areas: "cabeza cabeza" "imgprincipal imgprincipal" "texto texto" "pie pie";
   gap: 3px; }
   .contenedorUno .imgPrincipal {
     grid-area: imgprincipal; }

@@ -3,8 +3,7 @@
 .contenedorUno {
     @include body();
     grid-template-areas:
-        "logo titulo"
-        "lista lista"
+        "cabeza cabeza"
         "imgprincipal imgprincipal"
         "texto texto"
         "pie pie";
