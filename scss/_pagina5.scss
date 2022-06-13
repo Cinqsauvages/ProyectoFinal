@@ -11,7 +11,9 @@
         "formu ubica"
         "redes redes"
         "pie pie";
-    gap: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 3px;
 
     .formulario {
         grid-area: formu;

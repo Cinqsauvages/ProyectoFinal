@@ -99,23 +99,19 @@
         display: grid;
         grid-template-areas:
         "cabeza cabeza"
-        "pr pr"
-        "idica indica"
-        "pr pr"
+        "indica indica"
+        "cata cata"
         "pie pie";
-        .cuatroTexto{
-            border:none;
-        }
-        .cuadroUno{
-            margin: 10px;
-            width: 350px;
-            height: 350px;
-            overflow: auto;
+      
+        .indicaciones{
+            display: block;
+            flex-direction: column;
         }
         .catalogo{
-            display: none;
+            overflow: auto;
     
         }
+
     }
    
 

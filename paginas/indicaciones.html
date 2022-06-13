@@ -20,88 +20,157 @@
 <body class="contenedorCuatro">
     <header class="head">
         <!-- imagen del menu -->
-       <div class="foto">
-           <label for=""><a href=""><img src="../imagenes/LOGO.png" class="ban animate__animated animate__lightSpeedInRight"></a></label>
-           <h1 class="h11">CR Palacio Laboratorio</h1>
-       </div>
+        <div class="foto">
+            <label for=""><a href=""><img src="../imagenes/LOGO.png"
+                        class="ban animate__animated animate__lightSpeedInRight"></a></label>
+            <h1 class="h11">CR Palacio Laboratorio</h1>
+        </div>
 
 
-       <!-- menu -->
-       <nav class="nave">
-           <ul class="pul">
-               <li class="botonNave ">
-                   <a class="nav-link deco" aria-current="page" href="../index.html">Inicio</a>
-               </li>
-               <li class="dropdown botonNave ">
-                   <a class="nav-link dropdown-toggle deco" data-bs-toggle="dropdown" href="#" role="button"
-                       aria-expanded="false">Mas</a>
-                   <ul class="dropdown-menu botonNave">
-                       <li class="botonNave"><a class="dropdown-item" href="estudios.html">Tratamientos</a></li>
-                       <li class="botonNave"><a class="dropdown-item" href="quienes-somos.html">¿Quienes Somos?</a></li>
-                       <li class="botonNave"><a class="dropdown-item deco" href="indicaciones.html">Indicaciones</a></li>
-                   </ul>
-               </li>
-               <li class="botonNave ">
-                   <a class="nav-link deco" href="contacto.html">Contacto</a>
-               </li>
-           </ul>
-       </nav>
-   </header>
+        <!-- menu -->
+        <nav class="nave">
+            <ul class="pul">
+                <li class="botonNave ">
+                    <a class="nav-link deco" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="dropdown botonNave ">
+                    <a class="nav-link dropdown-toggle deco" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Mas</a>
+                    <ul class="dropdown-menu botonNave">
+                        <li class="botonNave"><a class="dropdown-item" href="estudios.html">Tratamientos</a></li>
+                        <li class="botonNave"><a class="dropdown-item" href="quienes-somos.html">¿Quienes Somos?</a>
+                        </li>
+                        <li class="botonNave"><a class="dropdown-item deco" href="indicaciones.html">Indicaciones</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="botonNave ">
+                    <a class="nav-link deco" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-
+    <!--  INDICACIONES Y TIPOS DE PRODUCTOS -->
     <main class="indicaciones">
-        <h2><b>Indicaciones de cuidado:</b></h2>
-        <div class="cuadroUno">
-            <p class="cuatroTexto">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum odio facilis ipsam, iste
-                quod aliquid voluptatibus quis obcaecati dolores eaque facere mollitia tempora vitae reprehenderit
-                molestiae cupiditate minus nesciunt. Rem consectetur pariatur provident odit enim quam iusto quaerat
-                magni corporis. Ipsa perferendis, impedit minima labore quibusdam ut quasi rem?
-            </p>
+        <!-- seccion de cuidado -->
+        <div class="cuidado">
+            <h2 class="hImportante"><b>Indicaciones de cuidado:</b></h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item diseño">
+                    <h2 class="letras" id="flush-headingOne">
+                        <button class="accordion-button collapsed diseño" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Tratamiento de Caida Capilar.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body letras"> Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item diseño">
+                    <h2 class="letras" id="flush-headingTwo">
+                        <button class="accordion-button collapsed diseño" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Tratamiento de Ojo Seco.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body letras">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item diseño">
+                    <h2 class="letras" id="flush-headingThree">
+                        <button class="accordion-button collapsed diseño" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Tratamiento de Bioregeneracion celular.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body letras">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2> <b> Tipos de productos y su utlidad:</b></h2>
-        <div class="cuadroUno">
-            <p class="cuatroTexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates odio maxime
-                consectetur, veniam
-                voluptate molestiae esse excepturi atque nulla sequi voluptatem commodi neque sapiente, aspernatur porro
-                vel. Ipsum, quidem ad doloribus blanditiis obcaecati debitis sint asperiores aut minima harum
-                perspiciatis rem id praesentium beatae dignissimos ea reiciendis vel maiores architecto.
-            </p>
-        </div>
+        <div>
+            <!-- seccion de utilidad -->
+            <div class="utilidad">
+                <h2 class="tipo"> Tipos de Productos</h2>
+                <div class="cuadro">
+                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quia, assumenda
+                        quibusdam vitae voluptate animi maxime commodi aliquam ea molestiae rem quisquam nobis minus
+                        cupiditate quasi consequatur, quas illo magnam eligendi! Nemo aliquid sunt minus earum ipsa
+                        asperiores molestiae consequuntur non, voluptatem exercitationem corporis magni. Inventore
+                        voluptas dolorum unde recusandae.</p>
+                </div>
+            </div>
     </main>
-    <div class="productos">
-        <fieldset>
-            <h3>Seleccione el Producto</h3>
-            <select name="Productos" class="seleccionProductos">
-                <option class="selector" value="">Producto 1</option>
-                <option class="selector" value="">Producto 2</option>
-                <option class="selector" value="">Producto 3</option>
-            </select>
-            <input class="boton" type="submit" value="Comprar">
-            <input class="boton" type="reset" value="Cancelar">
-        </fieldset>
-    </div>
-    <div class="catalogo">
-        <div class="pr">
-            <h2>Prducto 1</h2>
-            <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
-                alt="imagen de shampoo contra la caida" class="imgPr  img-thumbnail img-responsive">
-            <h2>Prducto 2</h2>
-            <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
-                alt="imagen de shampoo contra la caida" class="imgPr   img-thumbnail img-responsive">
-            <h2>Prducto 3</h2>
-            <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
-                alt="imagen de shampoo contra la caida" class="imgPr img-thumbnail img-responsive ">
+    <!-- CATALOGO  Y PRODUCTOS-->
+    <div class="parteDos">
+        <!-- catalogo -->
+        <div class="catalogo">
+            <div class="pr">
+                <div class="productoImg">
+                    <h3>Prducto 1</h3>
+                    <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
+                        alt="imagen de shampoo contra la caida" class="imgPr  img-thumbnail img-responsive">
+                </div>
+                <div class="productoImg">
+                    <h3>Prducto 1</h3>
+                    <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
+                        alt="imagen de shampoo contra la caida" class="imgPr  img-thumbnail img-responsive">
+                </div>
+                <div class="productoImg">
+                    <h3>Prducto 1</h3>
+                    <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
+                        alt="imagen de shampoo contra la caida" class="imgPr  img-thumbnail img-responsive">
+                </div>
+                <div class="productoImg">
+                    <h3>Prducto 1</h3>
+                    <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
+                        alt="imagen de shampoo contra la caida" class="imgPr  img-thumbnail img-responsive">
+                </div>
+                <div class="productoImg">
+                    <h3>Prducto 1</h3>
+                    <img src="https://m.media-amazon.com/images/I/51XpP42lASL._SL500_.jpg"
+                        alt="imagen de shampoo contra la caida" class="imgPr  img-thumbnail img-responsive">
+                </div>
+
+            </div>
+
+            <!--  productos  -->
+            <div class="productos">
+                <fieldset>
+                    <h3>Seleccione el Producto</h3>
+                    <select name="Productos" class="seleccionProductos">
+                        <option class="selector" value="">Producto 1</option>
+                        <option class="selector" value="">Producto 2</option>
+                        <option class="selector" value="">Producto 3</option>
+                    </select>
+                    <input class="boton" type="submit" value="Comprar">
+                    <input class="boton" type="reset" value="Cancelar">
+                </fieldset>
+            </div>
         </div>
 
-    </div>
-
-    <footer class="footer">
-        <i>Laboratorio CRP/Sitio Web creado by <b>Juan Heguilen</b></i>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        <footer class="footer">
+            <i>Laboratorio CRP/Sitio Web creado by <b>Juan Heguilen</b></i>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

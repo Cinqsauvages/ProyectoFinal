@@ -1,4 +1,4 @@
-@import "maps","mixin";
+@import "maps", "mixin";
 /*PAGINA 4 INDICACIONES*/
 
 .contenedorCuatro {
@@ -6,54 +6,100 @@
     grid-template-areas:
         "cabeza cabeza"
         "indica indica"
-        "producto producto"
         "cata cata"
         "pie pie";
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     .indicaciones {
         grid-area: indica;
+        display: flex;
+        flex-direction: row;
 
-        .cuatroTexto {
-            text-align: center;
-            @include bordesDos ();
-            align-items: center;
+        .cuidado {
+            min-width: 50%;
+            min-height: 50%;
+
+            .hImportante {
+                text-align: start;
+                font-size: 1.5rem;
+                text-shadow: rosybrown 1px 3px;
+            }
+
+            .diseño {
+                background-color: pink;
+                border-radius: 20px;
+
+            }
+
+            .letras {
+                color: black;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: start;
+            }
         }
+
+        .utilidad {
+            .tipo {
+                text-align: start;
+                font-size: 1.5rem;
+                text-shadow: black 1px 3px;
+                font-weight: bold;
+
+            }
+
+            .cuadro {
+                .texto {
+                    color: black;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-align: start;
+                }
+            }
+        }
+
+
     }
 
-    .productos {
-        grid-area: producto;
+}
 
-        .seleccionProductos {
-            border: map-get($map, $key: borde);
-        }
-
-        .boton {
-            width: auto;
-            height: 30px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        h3 {
-            background-color: cadetblue;
-            border: map-get($map, $key: borde);
-        }
-    }
+    .parteDos {
+    grid-area: cata;
 
     .catalogo {
-        grid-area: cata;
 
         .pr {
             display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            overflow: scroll;
-            margin: 0;
+            justify-content: space-between;
+            .productoImg{
+                margin:10px;
+                overflow: hidden;
+            }
 
-            .imgPr {
-                width: 250px;
-                height: 250px;
+
+
+        }
+
+        .productos {
+
+            .seleccionProductos {
+                border: map-get($map, $key: borde);
+            }
+
+            .boton {
+                width: auto;
+                height: 30px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            h3 {
+                background-color: cadetblue;
+                border: map-get($map, $key: borde);
             }
         }
+
     }
 }

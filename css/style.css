@@ -79,6 +79,8 @@ p {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
   grid-template-areas: "cabeza cabeza" "imgprincipal imgprincipal" "texto texto" "pie pie";
+  margin-left: 10px;
+  margin-right: 10px;
   gap: 3px; }
   .contenedorUno .imgPrincipal {
     grid-area: imgprincipal; }
@@ -145,7 +147,9 @@ p {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
   grid-template-areas: "cabeza cabeza" "pr pr" "obj obj" "pie pie";
-  gap: 5px; }
+  gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px; }
   .contenedorTres .objetivos {
     grid-area: obj;
     border-radius: 30px 30px 30px 30px;
@@ -188,39 +192,58 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "cabeza cabeza" "indica indica" "producto producto" "cata cata" "pie pie"; }
+  grid-template-areas: "cabeza cabeza" "indica indica" "cata cata" "pie pie";
+  gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px; }
   .contenedorCuatro .indicaciones {
-    grid-area: indica; }
-    .contenedorCuatro .indicaciones .cuatroTexto {
-      text-align: center;
-      border-radius: 30px 30px 30px 30px;
-      -moz-border-radius: 30px 30px 30px 30px;
-      -webkit-border-radius: 30px 30px 30px 30px;
-      border: 8px double #000000;
-      align-items: center; }
-  .contenedorCuatro .productos {
-    grid-area: producto; }
-    .contenedorCuatro .productos .seleccionProductos {
-      border: 2px black solid; }
-    .contenedorCuatro .productos .boton {
-      width: auto;
-      height: 30px;
+    grid-area: indica;
+    display: flex;
+    flex-direction: row; }
+    .contenedorCuatro .indicaciones .cuidado {
+      min-width: 50%;
+      min-height: 50%; }
+      .contenedorCuatro .indicaciones .cuidado .hImportante {
+        text-align: start;
+        font-size: 1.5rem;
+        text-shadow: rosybrown 1px 3px; }
+      .contenedorCuatro .indicaciones .cuidado .diseño {
+        background-color: pink;
+        border-radius: 20px; }
+      .contenedorCuatro .indicaciones .cuidado .letras {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: start; }
+    .contenedorCuatro .indicaciones .utilidad .tipo {
+      text-align: start;
+      font-size: 1.5rem;
+      text-shadow: black 1px 3px;
+      font-weight: bold; }
+    .contenedorCuatro .indicaciones .utilidad .cuadro .texto {
+      color: black;
+      font-size: 1.2rem;
       font-weight: bold;
-      margin-bottom: 5px; }
-    .contenedorCuatro .productos h3 {
-      background-color: cadetblue;
-      border: 2px black solid; }
-  .contenedorCuatro .catalogo {
-    grid-area: cata; }
-    .contenedorCuatro .catalogo .pr {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      overflow: scroll;
-      margin: 0; }
-      .contenedorCuatro .catalogo .pr .imgPr {
-        width: 250px;
-        height: 250px; }
+      text-align: start; }
+
+.parteDos {
+  grid-area: cata; }
+  .parteDos .catalogo .pr {
+    display: flex;
+    justify-content: space-between; }
+    .parteDos .catalogo .pr .productoImg {
+      margin: 10px;
+      overflow: hidden; }
+  .parteDos .catalogo .productos .seleccionProductos {
+    border: 2px black solid; }
+  .parteDos .catalogo .productos .boton {
+    width: auto;
+    height: 30px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .parteDos .catalogo .productos h3 {
+    background-color: cadetblue;
+    border: 2px black solid; }
 
 /*PAGINA 5 CONTACTO*/
 .contenedorCinco {
@@ -231,6 +254,8 @@ p {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
   grid-template-areas: "cabeza cabeza" "formu ubica" "formu ubica" "redes redes" "pie pie";
+  margin-left: 10px;
+  margin-right: 10px;
   gap: 3px; }
   .contenedorCinco .formulario {
     grid-area: formu;
@@ -314,16 +339,12 @@ p {
   /*pagina 4*/
   .contenedorCuatro {
     display: grid;
-    grid-template-areas: "cabeza cabeza" "pr pr" "idica indica" "pr pr" "pie pie"; }
-    .contenedorCuatro .cuatroTexto {
-      border: none; }
-    .contenedorCuatro .cuadroUno {
-      margin: 10px;
-      width: 350px;
-      height: 350px;
-      overflow: auto; }
+    grid-template-areas: "cabeza cabeza" "indica indica" "cata cata" "pie pie"; }
+    .contenedorCuatro .indicaciones {
+      display: block;
+      flex-direction: column; }
     .contenedorCuatro .catalogo {
-      display: none; }
+      overflow: auto; }
   /*pagina5*/
   .contenedorCinco {
     display: grid;
