@@ -144,7 +144,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "cabeza cabeza" "pr pr" "obj obj" "pie pie"; }
+  grid-template-areas: "cabeza cabeza" "pr pr" "obj obj" "pie pie";
+  gap: 5px; }
   .contenedorTres .objetivos {
     grid-area: obj;
     border-radius: 30px 30px 30px 30px;
@@ -160,19 +161,24 @@ p {
     .contenedorTres .presentacion .roxana,
     .contenedorTres .presentacion .tamara {
       width: auto;
-      margin-right: 5px; }
+      margin-right: 5px;
+      padding: 2px; }
       .contenedorTres .presentacion .roxana .textoPr,
       .contenedorTres .presentacion .tamara .textoPr {
         height: 300px;
         overflow: auto;
-        border: 2px black solid;
         background-color: linear-gradient(to left, #ba5370, #f4e2d8);
-        text-align: center; }
+        text-align: start; }
       .contenedorTres .presentacion .roxana .img1,
       .contenedorTres .presentacion .tamara .img1 {
         width: 250px;
         height: 250px;
         border-radius: 70px; }
+      .contenedorTres .presentacion .roxana .nombre,
+      .contenedorTres .presentacion .tamara .nombre {
+        font-size: 2rem;
+        color: black;
+        font-weight: bold; }
 
 /*PAGINA 4 INDICACIONES*/
 .contenedorCuatro {
