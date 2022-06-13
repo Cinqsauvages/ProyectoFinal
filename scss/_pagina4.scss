@@ -69,13 +69,14 @@
     grid-area: cata;
 
     .catalogo {
-
         .pr {
             display: flex;
             justify-content: space-between;
+            overflow: scroll;
+            flex-direction: row;
             .productoImg{
                 margin:10px;
-                overflow: hidden;
+            
             }
 
 

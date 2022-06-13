@@ -230,10 +230,11 @@ p {
   grid-area: cata; }
   .parteDos .catalogo .pr {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    overflow: scroll;
+    flex-direction: row; }
     .parteDos .catalogo .pr .productoImg {
-      margin: 10px;
-      overflow: hidden; }
+      margin: 10px; }
   .parteDos .catalogo .productos .seleccionProductos {
     border: 2px black solid; }
   .parteDos .catalogo .productos .boton {
