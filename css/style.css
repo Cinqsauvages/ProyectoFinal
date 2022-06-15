@@ -112,7 +112,6 @@ p {
   gap: 3px; }
   .contenedorDos .principalDos {
     grid-area: tratamientos;
-    display: flex;
     font-size: 2rem;
     margin: 5px; }
   .contenedorDos .tratamientos {
@@ -120,7 +119,8 @@ p {
     -moz-border-radius: 30px 30px 30px 30px;
     -webkit-border-radius: 30px 30px 30px 30px;
     border: 8px double #000000;
-    margin-right: 5px; }
+    margin-right: 5px;
+    padding: 10px; }
     .contenedorDos .tratamientos legend {
       font-size: 2rem;
       margin-top: 25px;

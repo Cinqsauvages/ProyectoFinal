@@ -12,14 +12,17 @@
 
     .principalDos {
         grid-area: tratamientos;
-        display: flex;
         font-size: 2rem;
         margin: 5px;
+      
+       
     }
 
     .tratamientos {
         @include bordesDos ();
         margin-right: 5px;
+        padding: 10px;
+        
 
         legend {
             font-size: 2rem;
