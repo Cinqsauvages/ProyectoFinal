@@ -62,13 +62,19 @@ a {
   text-decoration: none;
   color: black; }
 
-p {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
+.textoP {
+  font-size: 1.2rem;
+  line-height: 1.56;
   text-align: start;
-  text-indent: 1rem;
-  margin-left: 10px; }
+  margin: 15px; }
+
+.tituloDos {
+  font-size: 2rem;
+  line-height: 2.4; }
+
+.tituloTres {
+  font-size: 1.6rem;
+  line-height: 1.92; }
 
 /*PAGINA 1 INDEX*/
 .contenedorUno {
