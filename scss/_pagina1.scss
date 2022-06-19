@@ -21,16 +21,7 @@
 
     .principal {
         grid-area: texto;
-        @include bordesDos ();
-
-        h2 {
-            font-size: 2rem;
-            color: map-get($map, $key: colorDos);
-            margin-top: 25px;
-            margin-bottom: 0;
-            text-decoration: underline;
-            font-weight: bold;
-        }
+        @include bordesDos ();      
 
     }
 

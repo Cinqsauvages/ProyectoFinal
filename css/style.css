@@ -66,15 +66,23 @@ a {
   font-size: 1.2rem;
   line-height: 1.56;
   text-align: start;
-  margin: 15px; }
+  margin: 15px;
+  font-weight: bold;
+  color: #652A0E; }
 
 .tituloDos {
   font-size: 2rem;
-  line-height: 2.4; }
+  line-height: 2.4;
+  color: #be8267;
+  font-weight: bold;
+  text-shadow: black 1px 1px; }
 
 .tituloTres {
   font-size: 1.6rem;
-  line-height: 1.92; }
+  line-height: 1.92;
+  font-weight: bold;
+  text-shadow: gray 1px 1px;
+  color: #724530; }
 
 /*PAGINA 1 INDEX*/
 .contenedorUno {
@@ -98,13 +106,6 @@ a {
     -moz-border-radius: 30px 30px 30px 30px;
     -webkit-border-radius: 30px 30px 30px 30px;
     border: 8px double #000000; }
-    .contenedorUno .principal h2 {
-      font-size: 2rem;
-      color: #a45656;
-      margin-top: 25px;
-      margin-bottom: 0;
-      text-decoration: underline;
-      font-weight: bold; }
 
 /*PAGINA 2 TRATAMIENTOS*/
 .contenedorDos {
@@ -127,13 +128,6 @@ a {
     border: 8px double #000000;
     margin-right: 5px;
     padding: 10px; }
-    .contenedorDos .tratamientos legend {
-      font-size: 2rem;
-      margin-top: 25px;
-      margin-bottom: 0;
-      font-weight: bold;
-      color: #a45656;
-      text-shadow: #F09090 1px 2px; }
 
 .imagenesVideo {
   grid-area: videos;
@@ -173,22 +167,11 @@ a {
       width: auto;
       margin-right: 5px;
       padding: 2px; }
-      .contenedorTres .presentacion .roxana .textoPr,
-      .contenedorTres .presentacion .tamara .textoPr {
-        height: 300px;
-        overflow: auto;
-        background-color: linear-gradient(to left, #ba5370, #f4e2d8);
-        text-align: start; }
       .contenedorTres .presentacion .roxana .img1,
       .contenedorTres .presentacion .tamara .img1 {
         width: 250px;
         height: 250px;
         border-radius: 70px; }
-      .contenedorTres .presentacion .roxana .nombre,
-      .contenedorTres .presentacion .tamara .nombre {
-        font-size: 2rem;
-        color: black;
-        font-weight: bold; }
 
 /*PAGINA 4 INDICACIONES*/
 .contenedorCuatro {
@@ -209,28 +192,9 @@ a {
     .contenedorCuatro .indicaciones .cuidado {
       min-width: 50%;
       min-height: 50%; }
-      .contenedorCuatro .indicaciones .cuidado .hImportante {
-        text-align: start;
-        font-size: 1.5rem;
-        text-shadow: rosybrown 1px 3px; }
       .contenedorCuatro .indicaciones .cuidado .diseño {
         background-color: pink;
         border-radius: 20px; }
-      .contenedorCuatro .indicaciones .cuidado .letras {
-        color: black;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: start; }
-    .contenedorCuatro .indicaciones .utilidad .tipo {
-      text-align: start;
-      font-size: 1.5rem;
-      text-shadow: black 1px 3px;
-      font-weight: bold; }
-    .contenedorCuatro .indicaciones .utilidad .cuadro .texto {
-      color: black;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-align: start; }
 
 .parteDos {
   grid-area: cata; }
@@ -248,9 +212,6 @@ a {
     height: 30px;
     font-weight: bold;
     margin-bottom: 5px; }
-  .parteDos .catalogo .productos h3 {
-    background-color: cadetblue;
-    border: 2px black solid; }
 
 /*PAGINA 5 CONTACTO*/
 .contenedorCinco {

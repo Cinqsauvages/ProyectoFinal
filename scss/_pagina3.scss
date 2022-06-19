@@ -30,24 +30,11 @@
             margin-right: 5px;
             padding: 2px;
 
-            .textoPr {
-                height: 300px;
-                overflow: auto;
-                background-color: map-get($map, $key:fondo2);
-                text-align: start;
-            }
-
             .img1 {
                 width: 250px;
                 height: 250px;
                 border-radius: 70px;
             }
-        .nombre{
-            font-size: 2rem;
-            color:black;
-            font-weight: bold;
-            
-        }
         }
     }
 }
