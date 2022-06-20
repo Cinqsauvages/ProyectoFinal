@@ -190,8 +190,7 @@ a {
     display: flex;
     flex-direction: row; }
     .contenedorCuatro .indicaciones .cuidado {
-      min-width: 50%;
-      min-height: 50%; }
+      min-width: 50%; }
       .contenedorCuatro .indicaciones .cuidado .diseño {
         background-color: pink;
         border-radius: 20px; }
@@ -229,8 +228,8 @@ a {
   gap: 3px; }
   .contenedorCinco .formulario {
     grid-area: formu;
-    border: 2px black solid;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10%; }
     .contenedorCinco .formulario .contenido {
       display: flex;
       justify-content: center;
@@ -244,53 +243,20 @@ a {
         border: 2px black solid; }
   .contenedorCinco .ubicacion {
     grid-area: ubica;
-    border: 2px black solid; }
+    margin-bottom: 10%; }
+    .contenedorCinco .ubicacion iframe {
+      width: 80%;
+      height: 90%; }
   .contenedorCinco .redes {
     grid-area: redes;
     border: 2px black solid;
     background-color: white; }
 
-/*tablet*/
-@media screen and (min-width: 450px) and (max-width: 780px) {
-  /* tratamientos enderezar*/
-  .principalDos {
-    flex-wrap: wrap; }
-  /*contendor 5*/
-  .contenedorCinco {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "cabeza cabeza" "formu formu" "ubica ubica" "redes redes" "pie pie"; } }
-
-@media screen and (max-width: 518px) {
-  .contenedorTres .presentacion {
-    display: block;
-    flex-direction: column;
-    width: 90%;
-    margin-left: 15px;
-    margin-top: 5px; } }
-
+/*........... medias ............*/
 @media screen and (min-width: 397px) and (max-width: 709px) {
   .contenedorDos .principalDos {
     margin-left: 5%; } }
 
-@media screen and (max-width: 640px) {
-  .foto {
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 10px; }
-  .textoP {
-    font-size: 1rem;
-    line-height: 1.20; }
-  .tituloDos {
-    font-size: 1.6rem;
-    line-height: 1.92; }
-  .tituloTres {
-    font-size: 1.3rem;
-    line-height: 1.56; } }
-
-/*celular*/
 @media screen and (max-width: 401px) {
   /*pagina 1*/
   .contenedorUno {
@@ -317,14 +283,49 @@ a {
       overflow: auto; }
     .contenedorDos .imagenesVideo {
       margin: 15px; }
-  /*pagina5*/
+  .contenedorCinco .formulario div {
+    width: 90%; } }
+
+@media screen and (max-width: 449px) {
+  .contenedorCinco .formulario {
+    width: 180%;
+    margin-left: 5%; } }
+
+@media screen and (min-width: 450px) and (max-width: 780px) {
+  /* tratamientos enderezar*/
+  .principalDos {
+    flex-wrap: wrap; }
+  /*contendor 5*/
   .contenedorCinco {
     display: grid;
-    grid-template-areas: "cabeza cabeza" "formu formu" "redes redes" "pie pie"; }
-  .ubicacion {
-    display: none; } }
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "cabeza cabeza" "formu formu" "ubica ubica" "redes redes" "pie pie"; } }
 
-/*MEDIAS*/
+@media screen and (max-width: 518px) {
+  .contenedorTres .presentacion {
+    display: block;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 5px; } }
+
+@media screen and (max-width: 640px) {
+  .foto {
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 10px; }
+  .textoP {
+    font-size: 1rem;
+    line-height: 1.20; }
+  .tituloDos {
+    font-size: 1.6rem;
+    line-height: 1.92; }
+  .tituloTres {
+    font-size: 1.3rem;
+    line-height: 1.56; } }
+
 @media screen and (max-width: 709px) {
   .principalDos {
     width: 90%;
@@ -333,9 +334,12 @@ a {
 
 @media screen and (max-width: 465px) {
   .contenedorCuatro .indicaciones {
-    display: block;
-    max-height: 250px; }
+    display: block; }
   .contenedorCuatro .parteDos {
+    display: none; } }
+
+@media screen and (max-width: 626px) {
+  .ubicacion {
     display: none; } }
 
 * {

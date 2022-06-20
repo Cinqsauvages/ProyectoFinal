@@ -17,8 +17,8 @@
 
     .formulario {
         grid-area: formu;
-        border: map-get($map, $key: borde);
         text-align: center;
+        margin-bottom: 10%;
 
         .contenido {
             display: flex;
@@ -38,7 +38,11 @@
 
     .ubicacion {
         grid-area: ubica;
-        border: map-get($map, $key: borde);
+        margin-bottom: 10%;
+        iframe{
+            width: 80%;
+            height: 90%;
+        }
     }
 
     .redes {

@@ -1,76 +1,15 @@
 @import "maps", "mixin";
 
-/*tablet*/
-@media screen and (min-width:450px) and(max-width:780px) {
 
-    /* tratamientos enderezar*/
-    .principalDos {
-        flex-wrap: wrap;
-
-    }
-
-    /*contendor 5*/
-    .contenedorCinco {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "cabeza cabeza"
-            "formu formu"
-            "ubica ubica"
-            "redes redes"
-            "pie pie";
-    }
-
-}
-
-@media screen and (max-width:518px) {
-    .contenedorTres {
-        .presentacion {
-            display: block;
-            flex-direction: column;
-            width: 90%;
-            margin-left: 15px;
-            margin-top: 5px;
-        }
-    }
-}
-
+/*........... medias ............*/
 @media screen and (min-width:397px) and (max-width:709px) {
     .contenedorDos {
         .principalDos {
             margin-left: 5%;
         }
-
+        
     }
 }
-
-@media screen and (max-width:640px) {
-    .foto {
-        display: block;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 10px;
-    }
-
-    .textoP {
-        font-size: 1rem;
-        line-height: 1.20;
-    }
-
-    .tituloDos {
-        font-size: 1.6rem;
-        line-height: 1.92;
-    }
-
-    .tituloTres {
-        font-size: 1.3rem;
-        line-height: 1.56;
-    }
-
-}
-
-/*celular*/
 @media screen and (max-width:401px) {
 
     /*pagina 1*/
@@ -120,31 +59,89 @@
             margin: 15px;
         }
     }
+    .contenedorCinco{
+        .formulario{
+            div{
+                width: 90%;
+            }
+        }
+        
+    }
 
+}
+@media screen and (max-width:449px)  {
+    
+    .contenedorCinco {
 
+        .formulario {
+            width: 180%;
+            margin-left: 5%;
 
+        }
+    }
+}
+@media screen and (min-width:450px) and(max-width:780px) {
 
+    /* tratamientos enderezar*/
+    .principalDos {
+        flex-wrap: wrap;
 
+    }
 
-    /*pagina5*/
+    /*contendor 5*/
     .contenedorCinco {
         display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto;
         grid-template-areas:
             "cabeza cabeza"
             "formu formu"
+            "ubica ubica"
             "redes redes"
             "pie pie";
-
     }
-
-    .ubicacion {
-        display: none;
-    }
-
 
 }
 
-/*MEDIAS*/
+@media screen and (max-width:518px) {
+    .contenedorTres {
+        .presentacion {
+            display: block;
+            flex-direction: column;
+            width: 90%;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    .foto {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+
+    .textoP {
+        font-size: 1rem;
+        line-height: 1.20;
+    }
+
+    .tituloDos {
+        font-size: 1.6rem;
+        line-height: 1.92;
+    }
+
+    .tituloTres {
+        font-size: 1.3rem;
+        line-height: 1.56;
+    }
+
+}
+
+
 @media screen and (max-width: 709px) {
 
     .principalDos {
@@ -156,10 +153,8 @@
 
 @media screen and (max-width:465px) {
     .contenedorCuatro {
-
         .indicaciones {
-            display: block;
-            max-height: 250px;
+            display: block
         }
 
         .parteDos {
@@ -168,3 +163,11 @@
 
     }
 }
+
+@media screen and (max-width:626px) {
+    .ubicacion {
+        display: none;
+    }
+
+}
+
