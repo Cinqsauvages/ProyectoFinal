@@ -22,47 +22,43 @@
             min-height: 50%;
 
             .diseño {
+
                 background-color: pink;
                 border-radius: 20px;
-
             }
         }
-
     }
-
 }
 
-    .parteDos {
+.parteDos {
     grid-area: cata;
 
-    .catalogo {
-        .pr {
-            display: flex;
-            justify-content: space-between;
-            overflow: scroll;
-            flex-direction: row;
-            .productoImg{
-                margin:10px;
+    .pr {
+        display: flex;
+        justify-content: space-evenly;
+
+        .productoImg {
+            width: 300px;
+            height: auto;
+
+            img {
+                width: 300px;
+                max-height: 300px;
+            }
             
-            }
-
-
-
         }
-
-        .productos {
-
-            .seleccionProductos {
-                border: map-get($map, $key: borde);
-            }
-
-            .boton {
-                width: auto;
-                height: 30px;
-                font-weight: bold;
-                margin-bottom: 5px;
-            }
+    }
+    .productos {
+        .seleccionProductos {
+            border: map-get($map, $key: borde);
         }
-
+    
+        .boton {
+            width: auto;
+            height: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
     }
 }
+

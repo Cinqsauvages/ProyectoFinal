@@ -1,10 +1,12 @@
-@import "maps","mixin";
+@import "maps", "mixin";
+
 /*tablet*/
-@media screen and (min-width:500px) and(max-width:780px )  {
+@media screen and (min-width:450px) and(max-width:780px) {
+
     /* tratamientos enderezar*/
-    .principalDos{
+    .principalDos {
         flex-wrap: wrap;
-        
+
     }
 
     /*contendor 5*/
@@ -21,48 +23,91 @@
     }
 
 }
-/*celular*/
-@media screen and (max-width:401px) {
-    .foto{
+
+@media screen and (max-width:518px) {
+    .contenedorTres {
+        .presentacion {
+            display: block;
+            flex-direction: column;
+            width: 90%;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (min-width:397px) and (max-width:709px) {
+    .contenedorDos {
+        .principalDos {
+            margin-left: 5%;
+        }
+
+    }
+}
+
+@media screen and (max-width:640px) {
+    .foto {
         display: block;
         flex-direction: column;
         flex-wrap: wrap;
         padding-top: 10px;
     }
-    p{
-        font-size: 1.3rem;
+
+    .textoP {
+        font-size: 1rem;
+        line-height: 1.20;
     }
-/*pagina 1*/
+
+    .tituloDos {
+        font-size: 1.6rem;
+        line-height: 1.92;
+    }
+
+    .tituloTres {
+        font-size: 1.3rem;
+        line-height: 1.56;
+    }
+
+}
+
+/*celular*/
+@media screen and (max-width:401px) {
+
+    /*pagina 1*/
     .contenedorUno {
         display: grid;
         grid-template-areas:
-        "cabeza cabeza"
-        "texto texto "
-        "pie pie";
+            "cabeza cabeza"
+            "texto texto "
+            "pie pie";
+
         .imgPrincipal {
             display: none;
-        .principal p {
-            font-size: 1.1rem;
+
+            .principal p {
+                font-size: 1.1rem;
+            }
         }
-        }
-        
     }
-    
+
     .presentacion {
         display: inline;
     }
-/*pagina2*/
+
+    /*pagina2*/
     .contenedorDos {
         display: grid;
         grid-area:
-        "cabeza cabeza"
-        "tratamiento tratamiento"
-        "video video"
-        "pie pie";
+            "cabeza cabeza"
+            "tratamiento tratamiento"
+            "video video"
+            "pie pie";
+
         .principalDos {
             display: block;
             flex-direction: column;
         }
+
         .tratamientos {
             margin-left: 15px;
             margin-bottom: 10px;
@@ -70,52 +115,18 @@
             height: 300px;
             overflow: auto;
         }
-        .imagenesVideo{
+
+        .imagenesVideo {
             margin: 15px;
         }
     }
-   
-/*pagina3*/
-    .contenedorTres {
-        display: grid;
-        grid-area:
-            "cabeza cabeza"
-            "pr pr"
-            "obj obj"
-            "pie pie";
-            .presentacion {
-                display: block;
-                flex-direction: column;
-                width: 90%;
-                margin-left: 15px;
-                margin-top: 5px;
-            }
-    }
 
-   
-    
-    /*pagina 4*/
-    .contenedorCuatro {
-        display: grid;
-        grid-template-areas:
-        "cabeza cabeza"
-        "indica indica"
-        "cata cata"
-        "pie pie";
-      
-        .indicaciones{
-            display: block;
-            flex-direction: column;
-        }
-        .catalogo{
-            overflow: auto;
-    
-        }
 
-    }
-   
 
-/*pagina5*/
+
+
+
+    /*pagina5*/
     .contenedorCinco {
         display: grid;
         grid-template-areas:
@@ -134,11 +145,26 @@
 }
 
 /*MEDIAS*/
-@media screen and (max-width: 709px){
+@media screen and (max-width: 709px) {
 
     .principalDos {
         width: 90%;
         display: block;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .contenedorCuatro {
+
+        .indicaciones {
+            display: block;
+            max-height: 250px;
+        }
+
+        .parteDos {
+            display: none;
+        }
+
     }
 }
