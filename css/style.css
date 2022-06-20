@@ -53,10 +53,19 @@ body {
 /*footer*/
 body .footer {
   grid-area: pie;
-  font-size: 1rem;
-  color: black;
-  text-align: end;
-  font-weight: bold; }
+  border-top: 1px black solid;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  justify-content: space-between; }
+  body .footer .partUno {
+    display: flex;
+    flex-direction: column;
+    text-align: start; }
+  body .footer .letra {
+    font-size: 1rem;
+    color: #652A0E;
+    line-height: 1.56; }
 
 a {
   text-decoration: none;
