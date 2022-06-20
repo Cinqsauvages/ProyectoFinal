@@ -1,0 +1,13 @@
+Agregue KEYWORDS en todas las paginas, 
+
+En el index agregue estas (BIOQUIMICA, COSMIATRIA, TRATAMIENTO, BELLEZA, PLASMA RICO EN PLAQUETAS, DERMAPEN, REJUVENECER, TRATAMIENTO DE BELLEZA, TRATAMIENTO CONTRA LA CAIDA DEL PELO, PELO FINO, CAIDA, CABELLO, PIEL, ARRUGAS, LABORATORIO)
+
+En la pagina de estudios (TRATAMIENTOS CAPILARES,TRATAMIENTOS DE OJO SECO, TRATAMIENTOS BIO, FOTOS)
+
+En la pagina de indicaciones (CUIDADOS, INDICACIONES, PRODUCTOS)
+
+En la pagina de Quienes somos (BIOQUIMICA, COSMIATRA, OBJETIVOS)
+
+En la pagina de contacto (REDES,COMUNICACION,FORMULARIO,UBICACION)
+
+Como asi tambien agregue la meta-tag description en todas las paginas, describiendo brevemente el contenido de cada una.
